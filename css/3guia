@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.clientes{
+    background-color: #595959;
+    border-top: 3px solid black;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.clientes h1{
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    padding: 20px;
+    background-color: #C8C8C8;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+}
+
+.clientesagrupados{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.cliente{
+    background-color: #C8C8C8;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px black;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.foto{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #545C64;
+}
+
+.estrelas{
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h4{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 15px;
+    color: black;
+    line-height: 1.5;
+}
+
+.bnt{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bnt-cinza{
+    display: inline-block;
+    background-color: #545C64;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: 1px 2px 4px black;
+    transition: background-color 0.3s ease;
+}
+
+.bnt-cinza:hover{
+    background-color: #C8C8C8;
+    color: black;
+}
