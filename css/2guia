@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+.catalogo{
+    background-color: #a0a0a0;
+    display: grid;
+    padding: 40px;
+    grid-template-areas:  
+        "closet armario mesa cama sofa"
+        "escrivaninha pia aparador centro cadeira"
+        "comoda criado cristaleira penteadeira rack";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-auto-rows: 150px;
+    height: auto;
+    gap: 80px; 
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.secao-produtos .titulo2 {
+    background-color: #595959;
+    font-size: 24px; 
+    padding: 5px;
+    font-weight: bold; 
+    color: black; 
+    border-top: 3px solid black;
+    text-align: center;
+}
+
+.item img{
+    border:1px solid black;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; 
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px; 
+}
+.item{
+    text-decoration: none;
+    color: black;
+}
+.item-1{
+    grid-area:closet;
+}
+.item-2{
+    grid-area: armario;
+}
+.item-3{
+    grid-area: mesa;
+}
+.item-4{
+    grid-area: cama;
+}
+.item-5{
+    grid-area: sofa;
+}
+.item-6{
+    grid-area: escrivaninha;
+}
+.item-7{
+    grid-area: pia;
+}
+.item-8{
+    grid-area: aparador;
+}
+.item-9{
+    grid-area: cadeira;
+}
+.item-10{
+    grid-area: centro;
+}
+.item-11{
+    grid-area: comoda;
+}
+.item-12{
+    grid-area: criado;
+}
+.item-13{
+    grid-area: cristaleira;
+}
+.item-14{
+    grid-area: penteadeira;
+}
+.item-15{
+    grid-area: rack;
+}
+.bnt-cinza1{
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #595959;
+    color:black;
+    border-radius: 20px;
+    width:60px;
+    height: 30px;
+    text-decoration: none;
+    box-shadow: 2px 2px 4px #a0a0a0;
+}
+
+.bnt-cinza1:hover {
+    background-color: #C8C8C8;
+    transform: scale(1.1);
+}
+
+.item {
+    height: 100%; 
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px; 
+    margin: 0 auto;
+}
+
+.item img {
+    width: 100%; 
+    height: auto;  
+    object-fit: cover;
+}
