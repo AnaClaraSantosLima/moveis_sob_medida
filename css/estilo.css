@@ -1,0 +1,490 @@
+/*Topo da página*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing:0;
+}
+:root{
+    --cinza:#969695;
+    --cinzaclaro:#C8C8C8;
+    --cinzaescuro:#545C64;
+    --laranja:#FF8400;
+    --laranjaclaro:#DD9634;
+    --laranjaescuro:#D36622;
+    --fonte:'Roboto', arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--fonte);
+    font-size:20px;
+    padding: 5px;
+    margin:0 auto;
+    background-color: #969695;
+    text-align: center;
+}
+
+.container{
+    max-width: 1280px;
+    width: 80%;
+    margin:0 auto;
+}
+.container-topo{ 
+    margin-left: 500px;
+    font-size: 15px;
+}
+.container-header {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    width: 100%;
+    justify-content: center;
+}
+
+nav{
+    background-color: #545C64;
+}
+.navegacaosuperior{ 
+    display: flex;
+    height:70px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navegacaosuperior menu{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    width:70%;
+    justify-content: space-around;
+}
+
+.imgcima img{
+    width:30px;
+}
+.imgbaixo {
+    display: flex;
+    justify-content: center;
+    gap:20px
+}
+.imgbaixo img {
+    width: 35px;
+    height: auto; 
+}
+.imgbaixo .face{
+    width:25px;
+}
+
+.topo{
+    background-color: #C8C8C8;
+}
+
+header.topo {
+    background-color: #C8C8C8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 150px;
+    text-align: center;
+}
+
+.imgbaixo{
+    gap: 5px;
+    margin-left: 470px;
+}
+
+.logo{
+    width: 250px;
+    height: 200px;
+    margin-right: 1000px;
+}
+
+.titulo {
+    font-size: 28px; 
+    color: black;
+    margin: -110px auto;
+}
+
+/*Início da Página*/
+.inicio{
+    background-image: url(../imagens/home.png);
+    background-repeat: no-repeat;
+    height: 400px;
+    width:98%;
+    margin: 0 auto;
+    padding: 10px;
+    border-top: 2px solid black;
+}
+
+.navegacao{
+    width: 80%;
+}
+.navegacao menu{
+    display:flex;
+    list-style: none;
+    justify-content:space-around;
+    padding:15px;
+}
+.navegacaosuperior a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    height:20px;
+}
+/*Início da Página*/
+
+/*Topo da Página*/
+
+
+/*Catálogo de produtos*/
+.catalogo{
+    background-image: url(../imagens/fundo.png);
+    display: grid;
+    padding: 40px;
+    grid-template-areas:  
+        "closet armario mesa cama"
+        "closet sofa escrivaninha pia";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px; 
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.secao-produtos .titulo2 {
+    background-color: #a0a0a0;
+    font-size: 24px; 
+    padding: 5px;
+    font-weight: bold; 
+    color: black; 
+    border-top: 3px solid black;
+    margin: 0 auto;
+}
+
+.item img{
+    border:1px solid black;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+}
+.item {
+    height: auto;
+    width: auto; 
+    padding: 2px;
+}
+.item a{
+    text-decoration: none;
+    color: black;
+}
+.item-1{
+    grid-area:closet;
+}
+.item-2{
+    grid-area: armario;
+}
+.item-3{
+    grid-area: mesa;
+}
+.item-4{
+    grid-area: cama;
+}
+.item-5{
+    grid-area: sofa;
+}
+.item-6{
+    grid-area: escrivaninha;
+}
+.item-7{
+    grid-area: pia;
+}
+
+.bnt-cinza1{
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 10px;
+    background-color: var(--cinzaclaro);
+    color:black;
+    border-radius: 20px;
+    width:60px;
+    height: 30px;
+    text-decoration: none;
+    box-shadow: 2px 2px 4px #545C64;
+}
+
+.bnt-cinza1:hover {
+    background-color: #a0a0a0;
+    transform: scale(1.1);
+}
+/*Catálogo de produtos*/
+
+
+/*História*/
+.historia{
+    background-image: url(../imagens/fundo2.png);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height:500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 3px solid black;
+}
+
+.historia h3 {
+    text-align: initial;
+    margin-bottom: 20px
+}
+
+.conteudo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.conteudo{
+    font-size: 20px;
+    padding: 20px;
+    font-weight:400;
+    padding: 20px;
+}
+
+.sofas{
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+}
+
+.lugar{
+    margin-right: 1000px;
+    width: 80px;
+    height: 80px;
+}
+
+.bnt {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bnt-cinza {
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 10px;
+    background-color: var(--cinzaescuro);
+    color: white;
+    border-radius: 20px;
+    width: 60px;
+    height: 30px;
+    text-decoration: none;
+    box-shadow: 2px 1px 5px #969695;
+}
+
+.bnt-cinza:hover{
+    background-color: var(--cinza);
+}
+/*Hitória*/
+
+
+/*Avaliações*/
+.clientes{
+    background-image: url(../imagens/fundo3.png);
+    background-repeat: no-repeat;
+    height: 700px;
+    border-top: 3px solid black;
+}
+.cliente{
+    background-color: var(--cinzaclaro);
+    width: 350px;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #545C64;
+}
+.clientes h1{
+    background-color: var(--cinzaclaro);
+    width: 260px;
+    height: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-size: 25px;
+    color: black;
+    margin-top: 25px;
+    box-shadow: 2px 2px 4px #545C64;
+}
+.clientesagrupados{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+
+}
+.cliente h4{
+    margin-top:60px;
+    text-align: center;
+    color: black;
+}
+
+.foto1, .foto2, .foto3{
+    position: absolute;
+    top: -50px;
+    left: 120px;
+    border-radius: 50%;
+    border: 10px solid var(--cinzaclaro);
+}
+
+.estrelas {
+    display: block;
+    font-size: 20px;
+    margin:0 auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.estrelas img {
+    width: 20px;
+    height: 20px;
+}
+
+.bnt-laranja{
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 15px;
+    height: 25px;
+    width: 180px;
+    display: inline-block;
+    color:white;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: var(--laranjaclaro);
+    box-shadow: 3px 2px 6px #969695;
+}
+
+.bnt-laranja:hover {
+    background-color: var(--laranjaescuro);
+}
+/*Avaliações*/
+
+
+/*Área final*/
+.final{
+    background-color: black;
+    display:grid;
+    grid-template-areas: 'localizacao orcamento'
+                         'localizacao contato';
+    height: auto;
+    font-size: 23px;
+    color:var(--laranja);
+    border-top: 3px solid white;
+    padding: 10px;
+    gap: 20px;
+  
+}
+/*Área final*/
+
+
+/*Área para contato*/
+.contato{   
+    grid-area: contato;
+    border-top: 1px solid white;
+    font-size: 20px;
+    width: 500px;
+    padding: 20px;
+    margin: 10px auto
+}
+
+.telefone {
+    height: 30px;
+    margin: 5px 0;
+}
+
+.numero {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.contato li{
+    background-color: #C8C8C8;
+    display: flex;
+    border-radius: 100%;
+    padding: 5px;
+}
+.contato ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 15px;
+}
+.contato ul li {
+    display: inline-block;
+}
+.contato ul li a img {
+    width: 40px;
+    height: 40px;
+}
+
+.contato h3{
+    text-align: center;
+    margin-top: 11px;
+    margin-bottom: 20px;
+}
+/*Àrea para contato*/
+
+
+/*Localização*/
+.localizacao{
+    grid-area: localizacao;
+    border-right: 1px solid white;
+    max-width: 100%;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.mapa{
+    background-image: url(../imagens/mapa.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 200px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.endereco{
+    font-size: 20px;
+    color: white;
+}
+/*Localização*/
+
+
+/*Orçamento*/
+.orcamento{
+    grid-area: orcamento;
+    font-size: 17px;
+    padding: 20px;
+}
+
+/*Orçamento*/
+
+
+/*Rodapé*/
+.rodape{
+    background-color: black; 
+    max-width:100%;
+    border-top: 1px solid white;
+    color: white;
+    padding: 10px;
+}
+/*Rodapé*/
